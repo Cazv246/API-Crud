@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS dealer_db;
+
+USE dealer_db;
+
+CREATE TABLE IF NOT EXISTS vehiculos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    marca VARCHAR(50) NOT NULL,
+    modelo VARCHAR(50) NOT NULL,
+    anio INT NOT NULL,
+    precio DECIMAL(10,2) NOT NULL
+);

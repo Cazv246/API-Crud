@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer de Vehículos - Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inventario de Vehículos</h1>
+    </header>
+    
+    <main class="container">
+        <section id="form-section">
+            <h2>Agregar Vehículo</h2>
+            <form id="form-insertar">
+                <input type="text" id="marca" placeholder="Marca" required>
+                <input type="text" id="modelo" placeholder="Modelo" required>
+                <input type="number" id="anio" placeholder="Año" required>
+                <input type="number" id="precio" placeholder="Precio" required>
+                <button type="submit">Agregar Vehículo</button>
+            </form>
+        </section>
+
+        <section id="inventory-section">
+            <h2>Inventario</h2>
+            <table id="tabla-inventario">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-cuerpo">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #5cb85c;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+#form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input {
+    flex: 1 1 calc(50% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Tabla de inventario */
+#inventory-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#tabla-inventario {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-inventario th, 
+#tabla-inventario td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabla-inventario th {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+#tabla-inventario tr:hover {
+    background-color: #f1f1f1;
+}
+
+#tabla-inventario td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#tabla-inventario td .editar {
+    background-color: #f0ad4e;
+}
+
+#tabla-inventario td .eliminar {
+    background-color: #d9534f;
+}
+
+#tabla-inventario td .editar:hover {
+    background-color: #ec971f;
+}
+
+#tabla-inventario td .eliminar:hover {
+    background-color: #c9302c;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    form input {
+        flex: 1 1 100%;
+    }
+
+    form button {
+        flex: 1 1 100%;
+    }
+} 
